@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3053A04145424A30037365C /* background.wav in Resources */ = {isa = PBXBuildFile; fileRef = F3053A03145424A30037365C /* background.wav */; };
+		F365CBF3144DCFBD006E349D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F365CBF2144DCFBD006E349D /* AVFoundation.framework */; };
+		F37BD4E91440B55300A045DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37BD4E81440B55300A045DE /* UIKit.framework */; };
+		F37BD4EB1440B55300A045DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37BD4EA1440B55300A045DE /* Foundation.framework */; };
+		F37BD4ED1440B55300A045DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37BD4EC1440B55300A045DE /* CoreGraphics.framework */; };
+		F37BD4F31440B55300A045DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F37BD4F11440B55300A045DE /* InfoPlist.strings */; };
+		F37BD4F51440B55300A045DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD4F41440B55300A045DE /* main.m */; };
+		F37BD4F91440B55300A045DE /* AmazingCardsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD4F81440B55300A045DE /* AmazingCardsAppDelegate.m */; };
+		F37BD4FC1440B55300A045DE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BD4FA1440B55300A045DE /* MainWindow.xib */; };
+		F37BD4FF1440B55300A045DE /* AmazingCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD4FE1440B55300A045DE /* AmazingCardsViewController.m */; };
+		F37BD50B1440B55F00A045DE /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5091440B55F00A045DE /* MainWindow-iPad.xib */; };
+		F37BD5301440B5C200A045DE /* CloisterBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5131440B5C200A045DE /* CloisterBlack.ttf */; };
+		F37BD5311440B5C200A045DE /* Dieter Steffmann License.txt in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5141440B5C200A045DE /* Dieter Steffmann License.txt */; };
+		F37BD5321440B5C200A045DE /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD5171440B5C200A045DE /* FontLabel.m */; };
+		F37BD5331440B5C200A045DE /* FontLabelStringDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD5191440B5C200A045DE /* FontLabelStringDrawing.m */; };
+		F37BD5341440B5C200A045DE /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD51B1440B5C200A045DE /* FontManager.m */; };
+		F37BD5351440B5C200A045DE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F37BD51C1440B5C200A045DE /* LICENSE */; };
+		F37BD5361440B5C200A045DE /* README in Resources */ = {isa = PBXBuildFile; fileRef = F37BD51D1440B5C200A045DE /* README */; };
+		F37BD5371440B5C200A045DE /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD51F1440B5C200A045DE /* ZAttributedString.m */; };
+		F37BD5381440B5C200A045DE /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F37BD5221440B5C200A045DE /* ZFont.m */; };
+		F37BD5391440B5C200A045DE /* jd.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5241440B5C200A045DE /* jd.png */; };
+		F37BD53A1440B5C200A045DE /* jf.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5251440B5C200A045DE /* jf.png */; };
+		F37BD53B1440B5C200A045DE /* jh.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5261440B5C200A045DE /* jh.png */; };
+		F37BD53C1440B5C200A045DE /* js.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5271440B5C200A045DE /* js.png */; };
+		F37BD53D1440B5C200A045DE /* kd.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5281440B5C200A045DE /* kd.png */; };
+		F37BD53E1440B5C200A045DE /* kf.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD5291440B5C200A045DE /* kf.png */; };
+		F37BD53F1440B5C200A045DE /* kh.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52A1440B5C200A045DE /* kh.png */; };
+		F37BD5401440B5C200A045DE /* ks.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52B1440B5C200A045DE /* ks.png */; };
+		F37BD5411440B5C200A045DE /* qd.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52C1440B5C200A045DE /* qd.png */; };
+		F37BD5421440B5C200A045DE /* qf.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52D1440B5C200A045DE /* qf.png */; };
+		F37BD5431440B5C200A045DE /* qh.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52E1440B5C200A045DE /* qh.png */; };
+		F37BD5441440B5C200A045DE /* qs.png in Resources */ = {isa = PBXBuildFile; fileRef = F37BD52F1440B5C200A045DE /* qs.png */; };
+		F37BD54C1440B76000A045DE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37BD54B1440B76000A045DE /* iAd.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F39888031447F85B0072F7E6 /* CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F39888021447F85B0072F7E6 /* CardClass.m */; };
+		F39F40C115E2057A00A55778 /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BA15E2057A00A55778 /* Icon-512.png */; };
+		F39F40C215E2057A00A55778 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BB15E2057A00A55778 /* Icon-72.png */; };
+		F39F40C315E2057A00A55778 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BC15E2057A00A55778 /* Icon-Small-50.png */; };
+		F39F40C415E2057A00A55778 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BD15E2057A00A55778 /* Icon-Small.png */; };
+		F39F40C515E2057A00A55778 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BE15E2057A00A55778 /* Icon-Small@2x.png */; };
+		F39F40C615E2057A00A55778 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40BF15E2057A00A55778 /* Icon.png */; };
+		F39F40C715E2057A00A55778 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F39F40C015E2057A00A55778 /* Icon@2x.png */; };
+		F3BA867614418EC7003C54F7 /* AmazingCardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BA867414418EC6003C54F7 /* AmazingCardsViewController.xib */; };
+		F3BA867814419A49003C54F7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F3BA867714419A49003C54F7 /* back.png */; };
+		F3DA144A144C114000E0EB4A /* spiral_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DA1448144C114000E0EB4A /* spiral_1.png */; };
+		F3DA144B144C114000E0EB4A /* spiral_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F3DA1449144C114000E0EB4A /* spiral_2.png */; };
+		F3DA144E144C1D6E00E0EB4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA144D144C1D6D00E0EB4A /* QuartzCore.framework */; };
+		F3EE86BD14554B9500EC8E5F /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EE86BC14554B9500EC8E5F /* Default-Portrait~ipad.png */; };
+		F3EE86BE1455595F00EC8E5F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3F48FFF14543E67005FB7C0 /* Default@2x.png */; };
+		F3F48FE114542C44005FB7C0 /* bell.caf in Resources */ = {isa = PBXBuildFile; fileRef = F3F48FE014542C44005FB7C0 /* bell.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3053A03145424A30037365C /* background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = background.wav; sourceTree = "<group>"; };
+		F365CBF2144DCFBD006E349D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F37BD4E41440B55300A045DE /* AmazingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37BD4E81440B55300A045DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F37BD4EA1440B55300A045DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F37BD4EC1440B55300A045DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F37BD4F01440B55300A045DE /* AmazingCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazingCards-Info.plist"; sourceTree = "<group>"; };
+		F37BD4F21440B55300A045DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F37BD4F41440B55300A045DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F37BD4F61440B55300A045DE /* AmazingCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazingCards-Prefix.pch"; sourceTree = "<group>"; };
+		F37BD4F71440B55300A045DE /* AmazingCardsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingCardsAppDelegate.h; sourceTree = "<group>"; };
+		F37BD4F81440B55300A045DE /* AmazingCardsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingCardsAppDelegate.m; sourceTree = "<group>"; };
+		F37BD4FB1440B55300A045DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F37BD4FD1440B55300A045DE /* AmazingCardsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingCardsViewController.h; sourceTree = "<group>"; };
+		F37BD4FE1440B55300A045DE /* AmazingCardsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingCardsViewController.m; sourceTree = "<group>"; };
+		F37BD50A1440B55F00A045DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		F37BD5131440B5C200A045DE /* CloisterBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CloisterBlack.ttf; sourceTree = "<group>"; };
+		F37BD5141440B5C200A045DE /* Dieter Steffmann License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Dieter Steffmann License.txt"; sourceTree = "<group>"; };
+		F37BD5161440B5C200A045DE /* FontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontLabel.h; sourceTree = "<group>"; };
+		F37BD5171440B5C200A045DE /* FontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontLabel.m; sourceTree = "<group>"; };
+		F37BD5181440B5C200A045DE /* FontLabelStringDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontLabelStringDrawing.h; sourceTree = "<group>"; };
+		F37BD5191440B5C200A045DE /* FontLabelStringDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontLabelStringDrawing.m; sourceTree = "<group>"; };
+		F37BD51A1440B5C200A045DE /* FontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		F37BD51B1440B5C200A045DE /* FontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontManager.m; sourceTree = "<group>"; };
+		F37BD51C1440B5C200A045DE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F37BD51D1440B5C200A045DE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		F37BD51E1440B5C200A045DE /* ZAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedString.h; sourceTree = "<group>"; };
+		F37BD51F1440B5C200A045DE /* ZAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAttributedString.m; sourceTree = "<group>"; };
+		F37BD5201440B5C200A045DE /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
+		F37BD5211440B5C200A045DE /* ZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFont.h; sourceTree = "<group>"; };
+		F37BD5221440B5C200A045DE /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
+		F37BD5241440B5C200A045DE /* jd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jd.png; sourceTree = "<group>"; };
+		F37BD5251440B5C200A045DE /* jf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jf.png; sourceTree = "<group>"; };
+		F37BD5261440B5C200A045DE /* jh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jh.png; sourceTree = "<group>"; };
+		F37BD5271440B5C200A045DE /* js.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = js.png; sourceTree = "<group>"; };
+		F37BD5281440B5C200A045DE /* kd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kd.png; sourceTree = "<group>"; };
+		F37BD5291440B5C200A045DE /* kf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kf.png; sourceTree = "<group>"; };
+		F37BD52A1440B5C200A045DE /* kh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kh.png; sourceTree = "<group>"; };
+		F37BD52B1440B5C200A045DE /* ks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ks.png; sourceTree = "<group>"; };
+		F37BD52C1440B5C200A045DE /* qd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qd.png; sourceTree = "<group>"; };
+		F37BD52D1440B5C200A045DE /* qf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qf.png; sourceTree = "<group>"; };
+		F37BD52E1440B5C200A045DE /* qh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qh.png; sourceTree = "<group>"; };
+		F37BD52F1440B5C200A045DE /* qs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qs.png; sourceTree = "<group>"; };
+		F37BD54B1440B76000A045DE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		F39888011447F85B0072F7E6 /* CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardClass.h; sourceTree = "<group>"; };
+		F39888021447F85B0072F7E6 /* CardClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardClass.m; sourceTree = "<group>"; };
+		F39F40BA15E2057A00A55778 /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-512.png"; path = "images/icons/Icon-512.png"; sourceTree = "<group>"; };
+		F39F40BB15E2057A00A55778 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "images/icons/Icon-72.png"; sourceTree = "<group>"; };
+		F39F40BC15E2057A00A55778 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "images/icons/Icon-Small-50.png"; sourceTree = "<group>"; };
+		F39F40BD15E2057A00A55778 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "images/icons/Icon-Small.png"; sourceTree = "<group>"; };
+		F39F40BE15E2057A00A55778 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "images/icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		F39F40BF15E2057A00A55778 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = images/icons/Icon.png; sourceTree = "<group>"; };
+		F39F40C015E2057A00A55778 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "images/icons/Icon@2x.png"; sourceTree = "<group>"; };
+		F3BA867514418EC6003C54F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AmazingCardsViewController.xib; sourceTree = "<group>"; };
+		F3BA867714419A49003C54F7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		F3DA1448144C114000E0EB4A /* spiral_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiral_1.png; sourceTree = "<group>"; };
+		F3DA1449144C114000E0EB4A /* spiral_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiral_2.png; sourceTree = "<group>"; };
+		F3DA144D144C1D6D00E0EB4A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3EE86BC14554B9500EC8E5F /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		F3F48FE014542C44005FB7C0 /* bell.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bell.caf; sourceTree = "<group>"; };
+		F3F48FF214543C0A005FB7C0 /* AmazingCards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AmazingCards.entitlements; sourceTree = "<group>"; };
+		F3F48FFF14543E67005FB7C0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F37BD4E11440B55300A045DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F365CBF3144DCFBD006E349D /* AVFoundation.framework in Frameworks */,
+				F3DA144E144C1D6E00E0EB4A /* QuartzCore.framework in Frameworks */,
+				F37BD54C1440B76000A045DE /* iAd.framework in Frameworks */,
+				F37BD4E91440B55300A045DE /* UIKit.framework in Frameworks */,
+				F37BD4EB1440B55300A045DE /* Foundation.framework in Frameworks */,
+				F37BD4ED1440B55300A045DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F37BD4D91440B55200A045DE = {
+			isa = PBXGroup;
+			children = (
+				F37BD4EE1440B55300A045DE /* AmazingCards */,
+				F37BD4E71440B55300A045DE /* Frameworks */,
+				F37BD4E51440B55300A045DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F37BD4E51440B55300A045DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F37BD4E41440B55300A045DE /* AmazingCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37BD4E71440B55300A045DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F365CBF2144DCFBD006E349D /* AVFoundation.framework */,
+				F3DA144D144C1D6D00E0EB4A /* QuartzCore.framework */,
+				F37BD54B1440B76000A045DE /* iAd.framework */,
+				F37BD4E81440B55300A045DE /* UIKit.framework */,
+				F37BD4EA1440B55300A045DE /* Foundation.framework */,
+				F37BD4EC1440B55300A045DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F37BD4EE1440B55300A045DE /* AmazingCards */ = {
+			isa = PBXGroup;
+			children = (
+				F3F48FF214543C0A005FB7C0 /* AmazingCards.entitlements */,
+				F37BD5121440B5C200A045DE /* Cloister-Black */,
+				F37BD5151440B5C200A045DE /* FontLabel */,
+				F37BD5231440B5C200A045DE /* images */,
+				F37BD5081440B55A00A045DE /* iPad */,
+				F37BD4F71440B55300A045DE /* AmazingCardsAppDelegate.h */,
+				F37BD4F81440B55300A045DE /* AmazingCardsAppDelegate.m */,
+				F37BD4FA1440B55300A045DE /* MainWindow.xib */,
+				F37BD4FD1440B55300A045DE /* AmazingCardsViewController.h */,
+				F37BD4FE1440B55300A045DE /* AmazingCardsViewController.m */,
+				F3BA867414418EC6003C54F7 /* AmazingCardsViewController.xib */,
+				F39888011447F85B0072F7E6 /* CardClass.h */,
+				F39888021447F85B0072F7E6 /* CardClass.m */,
+				F3053A03145424A30037365C /* background.wav */,
+				F3F48FE014542C44005FB7C0 /* bell.caf */,
+				F37BD4EF1440B55300A045DE /* Supporting Files */,
+			);
+			path = AmazingCards;
+			sourceTree = "<group>";
+		};
+		F37BD4EF1440B55300A045DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F37BD4F01440B55300A045DE /* AmazingCards-Info.plist */,
+				F37BD4F11440B55300A045DE /* InfoPlist.strings */,
+				F37BD4F41440B55300A045DE /* main.m */,
+				F37BD4F61440B55300A045DE /* AmazingCards-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F37BD5081440B55A00A045DE /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				F37BD5091440B55F00A045DE /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		F37BD5121440B5C200A045DE /* Cloister-Black */ = {
+			isa = PBXGroup;
+			children = (
+				F37BD5141440B5C200A045DE /* Dieter Steffmann License.txt */,
+				F37BD5131440B5C200A045DE /* CloisterBlack.ttf */,
+			);
+			path = "Cloister-Black";
+			sourceTree = "<group>";
+		};
+		F37BD5151440B5C200A045DE /* FontLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F37BD5161440B5C200A045DE /* FontLabel.h */,
+				F37BD5171440B5C200A045DE /* FontLabel.m */,
+				F37BD5181440B5C200A045DE /* FontLabelStringDrawing.h */,
+				F37BD5191440B5C200A045DE /* FontLabelStringDrawing.m */,
+				F37BD51A1440B5C200A045DE /* FontManager.h */,
+				F37BD51B1440B5C200A045DE /* FontManager.m */,
+				F37BD51C1440B5C200A045DE /* LICENSE */,
+				F37BD51D1440B5C200A045DE /* README */,
+				F37BD51E1440B5C200A045DE /* ZAttributedString.h */,
+				F37BD51F1440B5C200A045DE /* ZAttributedString.m */,
+				F37BD5201440B5C200A045DE /* ZAttributedStringPrivate.h */,
+				F37BD5211440B5C200A045DE /* ZFont.h */,
+				F37BD5221440B5C200A045DE /* ZFont.m */,
+			);
+			path = FontLabel;
+			sourceTree = "<group>";
+		};
+		F37BD5231440B5C200A045DE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4900114543EBE005FB7C0 /* Defaults */,
+				F3DA1448144C114000E0EB4A /* spiral_1.png */,
+				F3DA1449144C114000E0EB4A /* spiral_2.png */,
+				F3BA867714419A49003C54F7 /* back.png */,
+				F37BD5241440B5C200A045DE /* jd.png */,
+				F37BD5251440B5C200A045DE /* jf.png */,
+				F37BD5261440B5C200A045DE /* jh.png */,
+				F37BD5271440B5C200A045DE /* js.png */,
+				F37BD5281440B5C200A045DE /* kd.png */,
+				F37BD5291440B5C200A045DE /* kf.png */,
+				F37BD52A1440B5C200A045DE /* kh.png */,
+				F37BD52B1440B5C200A045DE /* ks.png */,
+				F37BD52C1440B5C200A045DE /* qd.png */,
+				F37BD52D1440B5C200A045DE /* qf.png */,
+				F37BD52E1440B5C200A045DE /* qh.png */,
+				F37BD52F1440B5C200A045DE /* qs.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F3F4900114543EBE005FB7C0 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				F3F48FFF14543E67005FB7C0 /* Default@2x.png */,
+				F3EE86BC14554B9500EC8E5F /* Default-Portrait~ipad.png */,
+				F39F40BA15E2057A00A55778 /* Icon-512.png */,
+				F39F40BB15E2057A00A55778 /* Icon-72.png */,
+				F39F40BC15E2057A00A55778 /* Icon-Small-50.png */,
+				F39F40BD15E2057A00A55778 /* Icon-Small.png */,
+				F39F40BE15E2057A00A55778 /* Icon-Small@2x.png */,
+				F39F40BF15E2057A00A55778 /* Icon.png */,
+				F39F40C015E2057A00A55778 /* Icon@2x.png */,
+			);
+			name = Defaults;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F37BD4E31440B55300A045DE /* AmazingCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37BD5051440B55300A045DE /* Build configuration list for PBXNativeTarget "AmazingCards" */;
+			buildPhases = (
+				F37BD4E01440B55300A045DE /* Sources */,
+				F37BD4E11440B55300A045DE /* Frameworks */,
+				F37BD4E21440B55300A045DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazingCards;
+			productName = AmazingCards;
+			productReference = F37BD4E41440B55300A045DE /* AmazingCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F37BD4DB1440B55200A045DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = F37BD4DE1440B55200A045DE /* Build configuration list for PBXProject "AmazingCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F37BD4D91440B55200A045DE;
+			productRefGroup = F37BD4E51440B55300A045DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F37BD4E31440B55300A045DE /* AmazingCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F37BD4E21440B55300A045DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37BD4F31440B55300A045DE /* InfoPlist.strings in Resources */,
+				F37BD4FC1440B55300A045DE /* MainWindow.xib in Resources */,
+				F37BD50B1440B55F00A045DE /* MainWindow-iPad.xib in Resources */,
+				F37BD5301440B5C200A045DE /* CloisterBlack.ttf in Resources */,
+				F37BD5311440B5C200A045DE /* Dieter Steffmann License.txt in Resources */,
+				F37BD5351440B5C200A045DE /* LICENSE in Resources */,
+				F37BD5361440B5C200A045DE /* README in Resources */,
+				F37BD5391440B5C200A045DE /* jd.png in Resources */,
+				F37BD53A1440B5C200A045DE /* jf.png in Resources */,
+				F37BD53B1440B5C200A045DE /* jh.png in Resources */,
+				F37BD53C1440B5C200A045DE /* js.png in Resources */,
+				F37BD53D1440B5C200A045DE /* kd.png in Resources */,
+				F37BD53E1440B5C200A045DE /* kf.png in Resources */,
+				F37BD53F1440B5C200A045DE /* kh.png in Resources */,
+				F37BD5401440B5C200A045DE /* ks.png in Resources */,
+				F37BD5411440B5C200A045DE /* qd.png in Resources */,
+				F37BD5421440B5C200A045DE /* qf.png in Resources */,
+				F37BD5431440B5C200A045DE /* qh.png in Resources */,
+				F37BD5441440B5C200A045DE /* qs.png in Resources */,
+				F3BA867614418EC7003C54F7 /* AmazingCardsViewController.xib in Resources */,
+				F3BA867814419A49003C54F7 /* back.png in Resources */,
+				F3DA144A144C114000E0EB4A /* spiral_1.png in Resources */,
+				F3DA144B144C114000E0EB4A /* spiral_2.png in Resources */,
+				F3053A04145424A30037365C /* background.wav in Resources */,
+				F3F48FE114542C44005FB7C0 /* bell.caf in Resources */,
+				F3EE86BD14554B9500EC8E5F /* Default-Portrait~ipad.png in Resources */,
+				F3EE86BE1455595F00EC8E5F /* Default@2x.png in Resources */,
+				F39F40C115E2057A00A55778 /* Icon-512.png in Resources */,
+				F39F40C215E2057A00A55778 /* Icon-72.png in Resources */,
+				F39F40C315E2057A00A55778 /* Icon-Small-50.png in Resources */,
+				F39F40C415E2057A00A55778 /* Icon-Small.png in Resources */,
+				F39F40C515E2057A00A55778 /* Icon-Small@2x.png in Resources */,
+				F39F40C615E2057A00A55778 /* Icon.png in Resources */,
+				F39F40C715E2057A00A55778 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F37BD4E01440B55300A045DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37BD4F51440B55300A045DE /* main.m in Sources */,
+				F37BD4F91440B55300A045DE /* AmazingCardsAppDelegate.m in Sources */,
+				F37BD4FF1440B55300A045DE /* AmazingCardsViewController.m in Sources */,
+				F37BD5321440B5C200A045DE /* FontLabel.m in Sources */,
+				F37BD5331440B5C200A045DE /* FontLabelStringDrawing.m in Sources */,
+				F37BD5341440B5C200A045DE /* FontManager.m in Sources */,
+				F37BD5371440B5C200A045DE /* ZAttributedString.m in Sources */,
+				F37BD5381440B5C200A045DE /* ZFont.m in Sources */,
+				F39888031447F85B0072F7E6 /* CardClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F37BD4F11440B55300A045DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37BD4F21440B55300A045DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F37BD4FA1440B55300A045DE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37BD4FB1440B55300A045DE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F37BD5091440B55F00A045DE /* MainWindow-iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37BD50A1440B55F00A045DE /* en */,
+			);
+			name = "MainWindow-iPad.xib";
+			sourceTree = "<group>";
+		};
+		F3BA867414418EC6003C54F7 /* AmazingCardsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3BA867514418EC6003C54F7 /* en */,
+			);
+			name = AmazingCardsViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F37BD5031440B55300A045DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F37BD5041440B55300A045DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Angelo Ruta (R2J6856ZU6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Angelo Ruta (R2J6856ZU6)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "1B0BDBE7-CBA5-46CE-BE88-720B99DD7D83";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B0BDBE7-CBA5-46CE-BE88-720B99DD7D83";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F37BD5061440B55300A045DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AmazingCards/AmazingCards.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingCards/AmazingCards-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AmazingCards/AmazingCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F37BD5071440B55300A045DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AmazingCards/AmazingCards.entitlements;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingCards/AmazingCards-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AmazingCards/AmazingCards-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F37BD4DE1440B55200A045DE /* Build configuration list for PBXProject "AmazingCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37BD5031440B55300A045DE /* Debug */,
+				F37BD5041440B55300A045DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37BD5051440B55300A045DE /* Build configuration list for PBXNativeTarget "AmazingCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37BD5061440B55300A045DE /* Debug */,
+				F37BD5071440B55300A045DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F37BD4DB1440B55200A045DE /* Project object */;
+}
