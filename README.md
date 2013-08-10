@@ -1,4 +1,5 @@
-== Amazing Cards
+Amazing Cards
+=============
 
 Hi Guys!
 
